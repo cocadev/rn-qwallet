@@ -1,6 +1,6 @@
 {
-  "name": "WeiPay",
-  "version": "0.1.0",
+  "name": "QWallet",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -74,5 +74,22 @@
     "assets": [
       "./src/assets/fonts/"
     ]
-  }
+  },
+  "description": "Blockchain Wallet for Ethereum and ERC20 Tokens",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuantaPay/QWallet.git"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "erc20",
+    "qpay"
+  ],
+  "author": "QPay Global",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuantaPay/QWallet/issues"
+  },
+  "homepage": "https://github.com/QuantaPay/QWallet#readme"
 }
