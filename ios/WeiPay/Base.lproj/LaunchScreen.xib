@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14269.14" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Light.ttf">
+            <string>Cairo-Light</string>
+        </array>
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeiPay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EO4-1v-RCk">
+                    <rect key="frame" x="113.66666666666669" y="268" width="187" height="113"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="EO4-1v-RCk" secondAttribute="height" multiplier="187:113" id="3Dx-jg-yY8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Cairo-Light" family="Cairo" pointSize="60"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERC20 Token Wallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiW-T6-6E3">
+                    <rect key="frame" x="135" y="366" width="144" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="SiW-T6-6E3" secondAttribute="height" multiplier="9:2" id="e0N-SE-ViU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.031372549019607843" green="0.15294117647058825" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SiW-T6-6E3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="366" id="3hf-1f-gv2"/>
+                <constraint firstItem="SiW-T6-6E3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5R5-sB-rCg"/>
+                <constraint firstItem="EO4-1v-RCk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="268" id="HIc-xE-Viw"/>
+                <constraint firstItem="EO4-1v-RCk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Kzu-Ni-1lS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+</document>
