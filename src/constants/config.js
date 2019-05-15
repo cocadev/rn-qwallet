@@ -1,7 +1,7 @@
 export default{
     color:{
-        background:'#555', //#f3f4f7
+        background:'#151928', //#f3f4f7
         text:'#fff',       //#000
-        logoText:'#fff' //#1a1f3e
+        logoText:'#1f9358' //#1a1f3e
     }
 }
