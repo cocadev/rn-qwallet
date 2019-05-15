@@ -1,4 +1,4 @@
-package com.chainsafe.weipay;
+package com.qpay.qwallet;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "WeiPay";
+        return "QWallet";
     }
 }

@@ -1,4 +1,4 @@
-package com.chainsafe.weipay;
+package com.qpay.qwallet;
 
 import android.app.Application;
 
