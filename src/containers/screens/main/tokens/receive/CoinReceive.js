@@ -5,6 +5,7 @@ import {
 import QRCode from 'react-native-qrcode';
 import { connect } from 'react-redux';
 import RF from 'react-native-responsive-fontsize';
+import config from '../../../../../constants/config';
 
 class CoinReceive extends Component {
   render() {
@@ -33,12 +34,12 @@ class CoinReceive extends Component {
 const styles = StyleSheet.create({
   safeAreaView: {
     flex: 1,
-    backgroundColor: '#f4f7f9',
+    backgroundColor: config.color.background,
   },
   mainContainer: {
     flex: 1,
     justifyContent: 'flex-start',
-    backgroundColor: '#f4f7f9',
+    backgroundColor: config.color.background,
   },
   navContainer: {
     flex: 0.65,

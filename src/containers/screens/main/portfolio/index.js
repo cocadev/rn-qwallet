@@ -17,6 +17,7 @@ import processAllTokenBalances from '../../../../scripts/tokens/tokenBalances';
 import BackWithMenuNav from '../../../components/customPageNavs/BackWithMenuNav';
 import BoxShadowCard from '../../../components/shadowCards/BoxShadowCard';
 import getNetworkProvider from '../../../../constants/Providers';
+import config from '../../../../constants/config';
 
 /**
  * Screen is used to display the wallet portfolio of the user, which contains the
@@ -380,11 +381,11 @@ const styles = StyleSheet.create({
 	},
 	safeAreaView: {
 		flex: 1,
-		backgroundColor: '#f4f7f9',
+		backgroundColor: config.color.background,
 	},
 	mainContainer: {
 		flex: 1,
-		backgroundColor: '#f4f7f9',
+		backgroundColor: config.color.background,
 		width: '100%',
 	},
 	navBar: {
@@ -395,7 +396,7 @@ const styles = StyleSheet.create({
 		fontFamily: 'Cairo-Light',
 		fontSize: RF(4),
 		paddingLeft: '9%',
-		color: '#1a1f3e',
+		color: config.color.logoText,
 		flex: 0.75,
 		letterSpacing: 0.8,
 		justifyContent: 'center',

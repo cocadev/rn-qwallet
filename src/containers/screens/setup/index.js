@@ -6,6 +6,7 @@ import { NavigationActions } from 'react-navigation';
 import RF from 'react-native-responsive-fontsize';
 import LinearButton from '../../components/linearGradient/LinearButton';
 import ClearButton from '../../components/linearGradient/ClearButton';
+import config from '../../../constants/config';
 
 class CreateOrRestore extends Component {
   navigateCreate = () => {
@@ -52,10 +53,10 @@ class CreateOrRestore extends Component {
 const styles = StyleSheet.create({
   safeAreaView: {
     flex: 1,
-    backgroundColor: '#f4f7f9',
+    backgroundColor: config.color.background,
   },
   mainContainer: {
-    backgroundColor: '#f4f7f9',
+    backgroundColor: config.color.background,
     width: '100%',
     paddingTop: '45%',
     height: '100%',
@@ -67,10 +68,10 @@ const styles = StyleSheet.create({
     fontSize: RF(5.3),
     marginBottom: '-2%',
     letterSpacing: 1.1,
-    color: '#1a1f3e',
+    color: config.color.logoText,
   },
   textHeaderDescription: {
-    color: '#1a1f3e',
+    color: config.color.logoText,
     fontFamily: 'Cairo-Regular',
     fontSize: RF(2.1),
     letterSpacing: 2.5,

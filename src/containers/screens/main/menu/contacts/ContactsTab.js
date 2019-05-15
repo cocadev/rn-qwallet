@@ -10,6 +10,7 @@ import BackWithMenuNav from '../../../../components/customPageNavs/BackWithMenuN
 import ContactTabNavigator from '../../../../components/customPageNavs/ContactTabNavigator';
 import SelectedContact from './SelectedContact';
 import BoxShadowCard from '../../../../components/shadowCards/BoxShadowCard';
+import config from '../../../../../constants/config';
 
 /**
  * Screen that displays all the contacts that have been added to
@@ -112,7 +113,7 @@ const styles = StyleSheet.create({
     alignItems: 'stretch',
     justifyContent: 'flex-start',
     paddingTop: '2.5%',
-    backgroundColor: "#f4f7f9",
+    backgroundColor: config.color.background,
   },
   mainListItemContainer: {
     marginTop:'3%', 

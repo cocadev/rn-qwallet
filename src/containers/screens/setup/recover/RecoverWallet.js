@@ -9,6 +9,7 @@ import RF from 'react-native-responsive-fontsize';
 import LinearButton from '../../../components/linearGradient/LinearButton';
 import BackWithMenuNav from '../../../components/customPageNavs/BackWithMenuNav';
 import BoxShadowCard from '../../../components/shadowCards/BoxShadowCard';
+import config from '../../../../constants/config';
 
 const ethers = require('ethers');
 
@@ -159,11 +160,11 @@ class RecoverWallet extends Component {
 const styles = StyleSheet.create({
   safeAreaView: {
     flex: 1,
-    backgroundColor: '#f4f7f9',
+    backgroundColor: config.color.background,
   },
   mainContainer: {
     flex: 1,
-    backgroundColor: '#f4f7f9',
+    backgroundColor: config.color.background,
     width: '100%',
   },
   container: {
@@ -183,7 +184,7 @@ const styles = StyleSheet.create({
     fontSize: RF(4),
     letterSpacing: 0.8,
     paddingLeft: '9%',
-    color: '#000000',
+    color: config.color.text,
     flex: 0.65,
   },
   boxShadowContainer: {

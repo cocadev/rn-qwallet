@@ -11,6 +11,7 @@ import BoxShadowCard from '../../../../components/shadowCards/BoxShadowCard';
 import LinearButton from '../../../../components/linearGradient/LinearButton';
 import ClearButton from '../../../../components/linearGradient/ClearButton';
 import EditContact from './add/EditContact';
+import config from '../../../../../constants/config';
 
 
 class ContactAddresses extends Component {
@@ -140,7 +141,7 @@ const styles = StyleSheet.create({
   mainContainer: {
     flex: 0.95,
     alignItems: 'center',
-    backgroundColor: '#f4f7f9',
+    backgroundColor: config.color.background,
   },
   scrollViewContainer: {
     marginTop: '5%',

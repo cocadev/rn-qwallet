@@ -13,6 +13,7 @@ import LinearButton from '../../components/linearGradient/LinearButton';
 import BoxShadowCard from '../../components/shadowCards/BoxShadowCard';
 import BackWithMenuNav from '../../components/customPageNavs/BackWithMenuNav';
 import Toast from 'react-native-simple-toast';
+import config from '../../../constants/config';
 
 class PinPage extends Component {
 	constructor(props) {
@@ -271,12 +272,12 @@ class PinPage extends Component {
 const styles = StyleSheet.create({
 	safeAreaView: {
 		flex: 1,
-		backgroundColor: '#f4f7f9',
+		backgroundColor: config.color.background,
 	},
 	mainContainer: {
 		flex: 1,
 		justifyContent: 'center',
-		backgroundColor: '#f4f7f9',
+		backgroundColor: config.color.background,
 		width: '100%',
 	},
 	navContainer: {
@@ -291,7 +292,8 @@ const styles = StyleSheet.create({
 		fontSize: RF(4),
 		letterSpacing: 0.8,
 		paddingLeft: '9%',
-		color: '#1a1f3e',
+		color: config.color.text,
+		// color: '#1a1f3e',
 		flex: 0.11,
 	},
 	boxShadowContainer: {

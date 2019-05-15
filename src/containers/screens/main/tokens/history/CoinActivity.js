@@ -5,6 +5,7 @@ import {
 import { connect } from 'react-redux';
 import Config from 'react-native-config';
 import RF from 'react-native-responsive-fontsize';
+import config from '../../../../../constants/config';
 
 const axios = require('axios');
 const ethers = require('ethers');
@@ -142,11 +143,11 @@ class CoinActivity extends Component {
 const styles = StyleSheet.create({
 	safeAreaView: {
 		flex: 1,
-		backgroundColor: '#f4f7f9',
+		backgroundColor: config.color.background,
 	},
 	mainContainer: {
 		flex: 1,
-		backgroundColor: '#f4f7f9',
+		backgroundColor: config.color.background,
 		width: '100%',
 	},
 	listContainer: {
@@ -168,7 +169,7 @@ const styles = StyleSheet.create({
 	flatListStyle: {
 		flex: 1,
 		width: '100%',
-		backgroundColor: '#f4f7f9',
+		backgroundColor: config.color.background,
 	},
 	itemStyle: {
 		paddingBottom: '5%',

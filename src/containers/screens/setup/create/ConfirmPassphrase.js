@@ -9,6 +9,7 @@ import LinearButton from '../../../components/linearGradient/LinearButton';
 import ClearButton from '../../../components/linearGradient/ClearButton';
 import BackWithMenuNav from '../../../components/customPageNavs/BackWithMenuNav';
 import BoxShadowCard from '../../../components/shadowCards/BoxShadowCard';
+import config from '../../../../constants/config';
 
 const shuffle = require('shuffle-array');
 
@@ -170,11 +171,11 @@ class ConfirmPassphrase extends Component {
 const styles = StyleSheet.create({
   safeAreaView: {
     flex: 1,
-    backgroundColor: '#f4f7f9',
+    backgroundColor: config.color.background,
   },
   mainContainer: {
     flex: 1,
-    backgroundColor: '#f4f7f9',
+    backgroundColor: config.color.background,
     width: '100%',
   },
   navContainer: {
@@ -184,7 +185,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Cairo-Light',
     fontSize: RF(4),
     paddingLeft: '9%',
-    color: '#1a1f3e',
+    color: config.color.logoText,
     flex: 0.65,
   },
   boxShadowContainer: {
