@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
 		marginLeft: '10%',
 	},
 	addressTitle: {
-		fontFamily: 'Cairo-Regular',
+		fontFamily: 'Roboto-Regular',
 		color: 'black',
 		fontSize: RF(2.1),
 		lineHeight: RF(3),
@@ -197,7 +197,7 @@ const styles = StyleSheet.create({
 	type: {
 		fontSize: RF(2.4),
 		letterSpacing: 0.5,
-		fontFamily: 'Cairo-Regular',
+		fontFamily: 'Roboto-Regular',
 		alignItems: 'flex-start',
 		flex: 1,
 		width: '60%',
@@ -206,7 +206,7 @@ const styles = StyleSheet.create({
 	date: {
 		fontSize: RF(1.7),
 		letterSpacing: 0.4,
-		fontFamily: 'Cairo-Light',
+		fontFamily: 'Roboto-Light',
 		top: '1.75%',
 		color: '#141f25',
 	},
@@ -230,7 +230,7 @@ const styles = StyleSheet.create({
 	},
 	addressValue: {
 		fontSize: RF(2.1),
-		fontFamily: 'Cairo-Light',
+		fontFamily: 'Roboto-Light',
 		color: 'black',
 		justifyContent: 'center',
 		lineHeight: RF(3),
@@ -241,7 +241,7 @@ const styles = StyleSheet.create({
 		flexWrap: 'wrap',
 	},
 	amountTitle: {
-		fontFamily: 'Cairo-Regular',
+		fontFamily: 'Roboto-Regular',
 		color: 'black',
 		fontSize: RF(2.1),
 		lineHeight: RF(2.6),
@@ -249,7 +249,7 @@ const styles = StyleSheet.create({
 	},
 	amountValue: {
 		fontSize: RF(2.1),
-		fontFamily: 'Cairo-Light',
+		fontFamily: 'Roboto-Light',
 		color: 'black',
 		justifyContent: 'center',
 		lineHeight: RF(2.6),

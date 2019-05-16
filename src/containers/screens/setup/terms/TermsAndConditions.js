@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
   },
   textHeader: {
-    fontFamily: 'Cairo-Light',
+    fontFamily: 'Roboto-Light',
     fontSize: RF(4),
     paddingLeft: '9%',
     letterSpacing: 0.8,

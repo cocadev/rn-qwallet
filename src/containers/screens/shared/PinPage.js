@@ -287,7 +287,7 @@ const styles = StyleSheet.create({
 		flex: 5.65,
 	},
 	textHeader: {
-		fontFamily: 'Cairo-Light',
+		fontFamily: 'Roboto-Light',
 		paddingBottom: '5%',
 		fontSize: RF(4),
 		letterSpacing: 0.8,
@@ -315,7 +315,7 @@ const styles = StyleSheet.create({
 		paddingTop: '10%',
 		paddingLeft: '10%',
 		paddingRight: '10%',
-		fontFamily: 'Cairo-Light',
+		fontFamily: 'Roboto-Light',
 		letterSpacing: 0.4,
 		fontSize: RF(2.4),
 		color: '#000000',

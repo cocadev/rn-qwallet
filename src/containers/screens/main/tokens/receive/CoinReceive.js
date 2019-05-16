@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     width: 225,
   },
   addressTitle: {
-    fontFamily: 'Cairo-Regular',
+    fontFamily: 'Roboto-Regular',
     color: 'black',
     fontSize: RF(2.1),
     lineHeight: RF(2.6),
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     fontSize: RF(2.1),
     lineHeight: RF(2.6),
     letterSpacing: 0.6,
-    fontFamily: 'Cairo-Light',
+    fontFamily: 'Roboto-Light',
     color: 'black',
     justifyContent: 'center',
   },

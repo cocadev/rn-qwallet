@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
 	labelText: {
 		fontSize: 16,
 		letterSpacing: 0.6,
-		fontFamily: 'Cairo-Light',
+		fontFamily: 'Roboto-Light',
 		color: 'black',
 		fontWeight: '200',
 	},

@@ -33,7 +33,7 @@ class CreateOrRestore extends Component {
           <Text style={styles.textHeaderDescription}>ERC20 Token Wallet </Text> */}
           <Image
             source={require('../../../assets/images/logo.png')}
-            style={{ width: width*0.76, height: width*0.2 }}
+            style={{ width: width*0.53, height: width*0.14 }}
           />
           <Text style={styles.textHeaderDescription}>Wallet for Everyday</Text>
           <View style={styles.btnContainer} >
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   textHeader: {
-    fontFamily: 'Cairo-Light',
+    fontFamily: 'Roboto-Light',
     fontSize: RF(5.3),
     marginBottom: '-2%',
     letterSpacing: 1.1,
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
   },
   textHeaderDescription: {
     color: config.color.logoText,
-    fontFamily: 'Cairo-Regular',
+    fontFamily: 'Roboto-Regular',
     fontSize: RF(2.1),
     letterSpacing: 2.5,
   },

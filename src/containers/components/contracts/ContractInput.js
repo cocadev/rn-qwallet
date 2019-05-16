@@ -31,7 +31,7 @@ class ContractInput extends Component {
 
 const styles = StyleSheet.create({
 	text: {
-		fontFamily: 'Cairo-Light',
+		fontFamily: 'Roboto-Light',
 		fontSize: RF(2.2),
 		letterSpacing: 0.8,
 		paddingLeft: '5%',

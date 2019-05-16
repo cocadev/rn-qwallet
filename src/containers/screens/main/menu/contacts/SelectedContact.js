@@ -153,7 +153,7 @@ const styles = StyleSheet.create({
   },
   contactName: {
     fontSize: RF(2.8),
-    fontFamily: 'Cairo-Regular',
+    fontFamily: 'Roboto-Regular',
     letterSpacing: 0.6,
     paddingLeft: '1%',
   },
@@ -193,14 +193,14 @@ const styles = StyleSheet.create({
   CoinTypeText: {
     fontSize: RF(2.4),
     letterSpacing: 0.5,
-    fontFamily: 'Cairo-Regular',
+    fontFamily: 'Roboto-Regular',
     marginBottom: 0,
     paddingBottom: 0,
   },
   textAddressText: {
     fontSize: RF(1.7),
     letterSpacing: 0.4,
-    fontFamily: 'Cairo-Light',
+    fontFamily: 'Roboto-Light',
     flexWrap: 'wrap',
   },
   btnContainer: {

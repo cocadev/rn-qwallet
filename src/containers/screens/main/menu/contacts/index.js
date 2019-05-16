@@ -132,7 +132,7 @@ const styles = StyleSheet.create({
   },
   listItemText: {
     fontSize: RF(2.4),
-    fontFamily: 'Cairo-Regular',
+    fontFamily: 'Roboto-Regular',
     alignItems: 'flex-start',
     flex: 1,
     width: '90%',

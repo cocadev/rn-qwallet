@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
         marginLeft: '9%',
     },
     textStyles: {
-        fontFamily: "Cairo-Regular",
+        fontFamily: "Roboto-Light",
         fontSize: RF(2.5),
         color: "#ffffff",
         letterSpacing: 0.4

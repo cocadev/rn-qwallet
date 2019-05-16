@@ -355,13 +355,13 @@ const styles = StyleSheet.create({
 	},
 	mainTitleText: {
 		fontSize: RF(2.6),
-		fontFamily: 'Cairo-Regular',
+		fontFamily: 'Roboto-Regular',
 		letterSpacing: 0.5,
 		color: 'black',
 	},
 	subTitleText: {
 		fontSize: RF(2),
-		fontFamily: 'Cairo-Regular',
+		fontFamily: 'Roboto-Regular',
 		letterSpacing: 0.5,
 	},
 	listItemFiatValue: {
@@ -374,7 +374,7 @@ const styles = StyleSheet.create({
 	listItemCryptoValue: {
 		alignItems: 'flex-end',
 		fontSize: RF(2),
-		fontFamily: 'Cairo-Regular',
+		fontFamily: 'Roboto-Regular',
 		letterSpacing: 0.5,
 		color: 'black',
 		paddingRight: '1.75%',
@@ -393,7 +393,7 @@ const styles = StyleSheet.create({
 		paddingBottom: '2%',
 	},
 	textHeader: {
-		fontFamily: 'Cairo-Light',
+		fontFamily: 'Roboto-Light',
 		fontSize: RF(4),
 		paddingLeft: '9%',
 		color: config.color.logoText,

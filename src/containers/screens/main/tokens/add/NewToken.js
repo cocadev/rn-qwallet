@@ -147,7 +147,7 @@ const styles = StyleSheet.create({
   warningText: {
     color: 'white',
     fontSize: RF(2.8),
-    fontFamily: 'Cairo-Light',
+    fontFamily: 'Roboto-Light',
     letterSpacing: 0.4,
     paddingBottom: '10%',
     paddingLeft: '10%',

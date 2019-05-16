@@ -325,7 +325,7 @@ const styles = StyleSheet.create({
 		paddingTop: '5%',
 	},
 	textHeader: {
-		fontFamily: 'Cairo-Light',
+		fontFamily: 'Roboto-Light',
 		fontSize: RF(4),
 		letterSpacing: 0.8,
 		paddingLeft: '9%',
@@ -334,7 +334,7 @@ const styles = StyleSheet.create({
 		marginBottom: '5%',
 	},
 	textDescription: {
-		fontFamily: 'Cairo-Light',
+		fontFamily: 'Roboto-Light',
 		fontSize: RF(3),
 		letterSpacing: 0.8,
 		paddingLeft: '9%',

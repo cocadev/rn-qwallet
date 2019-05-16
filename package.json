@@ -72,7 +72,7 @@
   },
   "rnpm": {
     "assets": [
-      "./src/assets/fonts/"
+      "./src/assets/fonts/roboto/"
     ]
   },
   "description": "Blockchain Wallet for Ethereum and ERC20 Tokens",

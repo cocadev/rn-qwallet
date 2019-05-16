@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
     flex: 2.5,
   },
   textHeader: {
-    fontFamily: 'Cairo-Light',
+    fontFamily: 'Roboto-Light',
     fontSize: RF(4),
     letterSpacing: 0.8,
     paddingLeft: '9%',

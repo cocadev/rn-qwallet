@@ -182,7 +182,7 @@ const styles = StyleSheet.create({
     flex: 0.65,
   },
   textHeader: {
-    fontFamily: 'Cairo-Light',
+    fontFamily: 'Roboto-Light',
     fontSize: RF(4),
     paddingLeft: '9%',
     color: config.color.logoText,
