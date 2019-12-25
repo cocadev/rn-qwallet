@@ -17,29 +17,20 @@ import LinearButton from '../../../components/linearGradient/LinearButton';
 import ClearButton from '../../../components/linearGradient/ClearButton';
 
 import getNetworkProvider from '../../../../constants/Providers';
-// import ContractInputContainer from '../../../components/contracts/ContractInputContainer';
-// import ContractInputConstant from '../../../components/contracts/ContractInputConstant';
 import { setNetwork } from '../../../store/actions/creators/AppConfig';
 import config from '../../../../constants/config';
 
-/**
- * Screen is used to display the passphrase (mnemonic) of the wallet
- */
 class Contract extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			// contractLoaded: false,
 			provider: null,
 			address: '',
-			// wallet: this.props.hotWallet.wallet,
-			// contractEvents: null,
 			contractFunctions: null,
 			contract: null,
 			withInputs: null,
 			functionsWithInputs: null,
 			payable: null,
-			// functions: [],
 			currentInput: {},
 		};
 	}
@@ -50,18 +41,14 @@ class Contract extends Component {
 	}
 
 	getContract = async () => {
-		// error handling  
 		const { success, objects } = await processContractByAddress(this.props.hotWallet.wallet,
 			this.state.address, this.state.provider, this.props.network);
 		if (success) {
-			// unused contract events
 			const { contractFunctions, contract, functionsWithInputs } = objects;
-			// console.log("in getContract success", contractFunctions, contract, withInputs);
 			this.setState({ contractFunctions, contract, functionsWithInputs });
 			Toast.show('Success', Toast.LONG);
 		}
 		else {
-			// error in getting contract
 			Toast.show('Error loading contract', Toast.LONG);
 			console.log("in getContract error from contract");
 		}
@@ -83,9 +70,6 @@ class Contract extends Component {
 		this.setState({ currentInput });
 	}
 
-  /**
-   * Need to check if contract method has no parameters, if it has paramaters, if is payable.
-   */
 	contractFuncCheck = async (functionItem) => {
 		console.log("function check functionItem", functionItem);
 
@@ -99,7 +83,6 @@ class Contract extends Component {
 			const result = await processFunctionCall2(this.props.hotWallet.wallet,
 				functionItem, {}, this.state.contract, this.state.provider);
 
-			// better suited
 			if (result.success) {
 				if (typeof result.data === "object") result.data = JSON.stringify(result.data);
 				Toast.show('Success,result - \n' + result.data, Toast.LONG);
@@ -115,7 +98,6 @@ class Contract extends Component {
 				const result = await processFunctionCall2(this.props.hotWallet.wallet,
 					functionItem, inputs, this.state.contract, this.state.provider);
 
-				// better suited
 				if (result.success) {
 					if (typeof result.data === "object") result.data = JSON.stringify(result.data);
 					Toast.show('Success,result - \n' + result.data, Toast.LONG);
@@ -134,7 +116,6 @@ class Contract extends Component {
 				const result = await processFunctionCall2(this.props.hotWallet.wallet,
 					functionItem, {}, this.state.contract, this.state.provider);
 
-				// better suited
 				if (result.success) {
 					if (typeof result.data === "object") result.data = JSON.stringify(result.data);
 					Toast.show('Success,result - \n' + result.data, Toast.LONG);
@@ -180,7 +161,6 @@ class Contract extends Component {
 						<View key={i} style={styles.functionContainer} >
 							<Card>
 								<View style={styles.functionInputContainer}>
-									{/* <Text>Signature: {item.functionSignature} </Text> */}
 									<Text>Signature: {item.name} </Text>
 								</View>
 								{
@@ -189,7 +169,6 @@ class Contract extends Component {
 										<View style={styles.functionInputContainer}>
 											<Text style={styles.textInput}> Ether value </Text>
 											<FormInput
-												// placeholder={this.state.payable ? this.state.payable.text : "Ether Value (Payable)"}
 												placeholder={"Ether Value (Payable)"}
 												onChangeText={(text) => this.processFunctionInput(text, 'payable', 'payable', item.name)}
 												inputStyle={styles.functionInputStyle}
@@ -205,7 +184,6 @@ class Contract extends Component {
 											<View style={styles.functionInputContainer} key={i}>
 												<Text style={styles.textInput}> {name} </Text>
 												<FormInput
-													// placeholder={this.state.payable ? this.state.payable.text : "Ether Value (Payable)"}
 													placeholder={item.inputs.types[i]}
 													onChangeText={(text) => this.processFunctionInput(text, name, item.inputs.types[i], item.name)}
 													inputStyle={styles.functionInputStyle}
@@ -228,11 +206,7 @@ class Contract extends Component {
 		);
 	}
 
-  /**
-   * Returns a component that allows the user to view the passphrase
-   */
 	render() {
-		// console.log(this.props.network);
 		return (
 			<SafeAreaView style={styles.safeAreaView}>
 				<TouchableWithoutFeedback onPress={Keyboard.dismiss}>
@@ -301,9 +275,7 @@ class Contract extends Component {
 	}
 }
 
-/**
- * Styles used in the BackupPhrase screen
- */
+
 const styles = StyleSheet.create({
 	safeAreaView: {
 		flex: 1,
