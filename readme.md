@@ -1,4 +1,4 @@
-Q-Wallet | A Wallet for Everyday built by react-native
+Q-Wallet | A Wallet for Everyday built by React Native
 
 BTC, ETH, QPY and 50+ other cryptocurrencies in wallet available as an Android, iOS and Web app.
 
